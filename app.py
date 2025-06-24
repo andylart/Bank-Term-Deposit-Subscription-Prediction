@@ -55,3 +55,4 @@ if st.button("Predict Subscription"):
     if prediction[0] == 1:
         st.success(f"✅ Client is likely to subscribe to the term deposit ({proba[0][1]:.2%} probability).")
     else:
+        st.error(f"❌ Client is unlikely to subscribe ({proba[0][0]:.2%} probability).")
