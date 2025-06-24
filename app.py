@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # App title and header
-st.set_page_config(page_title="📊 Bank Term Deposit Subscription Prediction", layout="centered")
+st.title("📊 Bank Term Deposit Subscription Prediction")
 
 # Load your trained model
 model = joblib.load('xgb_model_final.pkl')  # or 'xgb_model_final.pkl' if you prefer and have XGBoost installed
